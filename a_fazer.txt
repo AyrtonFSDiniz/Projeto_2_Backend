@@ -3,13 +3,13 @@ Rota Pais: falta colocar lingua mae e PIB e tirar descobrimento e area,
 Rota Estados: falta colocar região e valor salario minimo e tirar pais e area,
 Rota Cidades: colocar quantidade de bairros, tirar area.
 
-Modelo: - Paises
+Modelo: - Paises (Ayrton)
      - nome
      - população
      - lingua mãe
      - PIB
 
-- Estados
+- Estados (William)
      - nome
      - região
      - população
