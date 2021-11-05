@@ -1,0 +1,25 @@
+{
+  "name": "projeto_2_backend",
+  "version": "1.0.0",
+  "description": "Projeto de API utilizando NodeJs e MongoDB.",
+  "main": "index.js",
+  "scripts": {
+    "starts": "node",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyrtonFSDiniz/Projeto_2_Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyrtonFSDiniz/Projeto_2_Backend/issues"
+  },
+  "homepage": "https://github.com/AyrtonFSDiniz/Projeto_2_Backend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
