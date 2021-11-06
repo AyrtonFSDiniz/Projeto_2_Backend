@@ -16,20 +16,12 @@ router.get('/listAll', async (req,res) => {
   });
 });
 
-// rota para buscar um Estado por ID
-router.get("/listId/:id", async (req,res) => {
-  try{
-      const id = req.params.id;
-      if(!req.params.id){
-          res.status(404).json({message: "Estado não encontrado"});
-          return;
-      } else{
-      const estado = await Estado.findById(id);
-      res.status(200).json(estado)
-      }
-  } catch (err) {
-      res.status(204).json({message: "Estado não encontrado"})
-  }
+router.get('/listNome/:nome', async (req,res) => {
+  await Estado.find({Nome: req.params.nome}).then((estados) => {
+      res.status(200).json(estados);
+  }).catch((err) => {
+      res.status(204).json({message:"Nada foi encontrado"});
+  });
 });
 
 // rota POST para cadastrar novos Estados === OK
