@@ -32,3 +32,6 @@ Modelo: - Paises (Ayrton)
 -> MongoAtlas estar ok.
 -> Postar no Heroku.
 -> O README do github precisa estar totalmente preenchido e detalhado todas as rotas existentes e Colletion e Env do Thunder (Ayrton)
+
+
+-> Parte Ayrton: Falta verificar se todas as rotas e CRUD estão corretos e conectar com Mongo Atlas e Heroku.
