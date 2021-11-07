@@ -4,15 +4,15 @@ const router = express.Router();
 const listaPaises = [
   {
     Nome: "Canada",
-    Descobrimento: "1497",
     Populacao: "38.295.863",
-    Area: "9.985.000 km²",
+    Lingua_mae: "inglês e francês",
+    PIB: "1,643 trilhões de USD",
   },
   {
-    Nome: "Irlanda",
-    Descobrimento: "1.600 a.C.",
-    Populacao: "4.937.963",
-    Area: "70.273 km²",
+    Nome: "França",
+    Populacao: "67.390.000",
+    Lingua_mae: "francês",
+    PIB: "2,603 trilhões de USD",
   },
 ];
 
