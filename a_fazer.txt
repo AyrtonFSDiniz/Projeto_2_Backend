@@ -4,10 +4,10 @@ Rota Estados: falta colocar região e valor salario minimo e tirar pais e area,
 Rota Cidades: colocar quantidade de bairros, tirar area.
 
 Modelo: - Paises (Ayrton)
-     - nome
-     - população
-     - lingua mãe
-     - PIB
+     - nome (ok)
+     - população (ok)
+     - lingua mãe (ok)
+     - PIB (ok)
 
 - Estados (William)
      - nome
@@ -15,7 +15,7 @@ Modelo: - Paises (Ayrton)
      - população
      - valor salario minimo
 
-- Cidades
+- Cidades (William)
      - nome
      - quantidade de bairros
      - população
@@ -31,4 +31,4 @@ Modelo: - Paises (Ayrton)
 -> Inserir validação no update e mudar nomenclatura no add.
 -> MongoAtlas estar ok.
 -> Postar no Heroku.
--> O README do github precisa estar totalmente preenchido e detalhado todas as rotas existentes e Colletion e Env do Thunder
+-> O README do github precisa estar totalmente preenchido e detalhado todas as rotas existentes e Colletion e Env do Thunder (Ayrton)

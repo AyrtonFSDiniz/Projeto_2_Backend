@@ -5,18 +5,17 @@ app.use(express.json());
 
 const port = 3000;
 
-
-app.get("/", (req,res) => {
-  res.status(200).json({message:"Pagina inicial"});
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Pagina inicial" });
 });
 
-const paisesRouter = require("./paises");
+const paisesRouter = require("./routers/paises.router");
 app.use("/paises", paisesRouter);
 
-const estadosRouter = require("./estados");
+const estadosRouter = require("./estados.router");
 app.use("/estados", estadosRouter);
 
-const cidadesRouter = require("./cidades");
+const cidadesRouter = require("./cidades.router");
 app.use("/cidades", cidadesRouter);
 
 app.listen(port, () => {
