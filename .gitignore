@@ -102,6 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Arquivo txt com o passo a passo para o projeto
-.txt
