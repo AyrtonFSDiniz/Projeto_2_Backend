@@ -32,7 +32,7 @@ router.get("/listall", async (req, res) => {
     });
 });
 
-router.get("/listname/:nome", (req, res) => {
+router.get("/listname/:nome", async (req, res) => {
   const nome = req.params.nome;
   await Pais.findOne({ Nome: nome })
     .then((pais) => {
@@ -48,7 +48,7 @@ router.get("/listname/:nome", (req, res) => {
     });
 });
 
-router.post("/add", async (req, res) => {
+router.post("/create", async (req, res) => {
   const pais = req.body;
 
   if (!pais.Nome) {
@@ -123,8 +123,8 @@ router.put("/update/:id", async (req, res) => {
     });
 });
 
-router.delete("/delete/:Nome", async (req, res) => {
-  await Pais.deleteOne({ _Nome: req.params.Nome })
+router.delete("/delete/:id", async (req, res) => {
+  await Pais.deleteOne({ _id: req.params.id })
     .then(() => {
       res.status(200).json({ message: `Pais excluído com sucesso!` });
     })
