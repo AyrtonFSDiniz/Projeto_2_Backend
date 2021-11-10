@@ -29,8 +29,8 @@ Modelo: - Paises (Ayrton)
 - /listname
 
 -> Inserir validação no update e mudar nomenclatura no add.
--> MongoAtlas estar ok.
--> Postar no Heroku.
+-> MongoAtlas estar ok. -> ok
+-> Postar no Heroku. -> ok
 -> O README do github precisa estar totalmente preenchido e detalhado todas as rotas existentes e Colletion e Env do Thunder (Ayrton)
 
 

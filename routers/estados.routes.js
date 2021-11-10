@@ -2,6 +2,8 @@ const express = require("express"); //import do express
 const router = express.Router(); //define app como express
 const Estado = require("./../model/estados"); // import do modelo pessoa
 
+const 
+
 // Rota para raiz de Estados da API === OK
 router.get("/", (req, res) => {
   res.status(200).json({ message: "Rota Estados operante" });
