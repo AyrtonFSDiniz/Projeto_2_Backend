@@ -2,13 +2,15 @@ const express = require("express"); //import do express
 const router = express.Router(); //define app como express
 const Estado = require("./../model/estados"); // import do modelo pessoa
 
+const 
+
 // Rota para raiz de Estados da API === OK
 router.get("/", (req, res) => {
   res.status(200).json({ message: "Rota Estados operante" });
 });
 
 // Rota para listar todos os Estados === OK
-router.get('/listAll', async (req,res) => {
+router.get('/listall', async (req,res) => {
   await Estado.find({}).then((estados) => {
       res.status(200).json(estados);
   }).catch((err) => {
@@ -16,7 +18,7 @@ router.get('/listAll', async (req,res) => {
   });
 });
 
-router.get('/listNome/:nome', async (req,res) => {
+router.get('/listname/:nome', async (req,res) => {
   await Estado.find({Nome: req.params.nome}).then((estados) => {
       res.status(200).json(estados);
   }).catch((err) => {

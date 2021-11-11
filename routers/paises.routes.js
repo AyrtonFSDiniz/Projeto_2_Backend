@@ -2,21 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Pais = require("./../model/pais");
 
-const listaPaises = [
-  {
-    Nome: "Canada",
-    Populacao: 38295863,
-    Lingua_mae: "inglês e francês",
-    PIB: 1643000000,
-  },
-  {
-    Nome: "França",
-    Populacao: 67390000,
-    Lingua_mae: "francês",
-    PIB: 2603000000,
-  },
-];
-
 router.get("/", (req, res) => {
   res.status(200).json({ message: "Rota Países operante" });
 });
@@ -92,7 +77,7 @@ router.put("/update/:id", async (req, res) => {
   if (!paisx.Nome) {
     res
       .status(400)
-      .json({ message: "Nome do País cadastrado não pode ser vazio" });
+      .json({ message: "Nome do País cadastrado não pode ser vazio!" });
     return;
   }
   if (!paisx.Populacao) {
