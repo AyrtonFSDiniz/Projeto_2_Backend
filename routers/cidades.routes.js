@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
 });
 
 // Rota para listar todas as cidades === OK
-router.get('/listAll', async (req,res) => {
+router.get('/listall', async (req,res) => {
   await Cidade.find({}).then((cidades) => {
       res.status(200).json(cidades);
   }).catch((err) => {
@@ -16,7 +16,7 @@ router.get('/listAll', async (req,res) => {
   });
 });
 
-router.get('/listNome/:nome', async (req,res) => {
+router.get('/listname/:nome', async (req,res) => {
   await Cidade.find({Nome: req.params.nome}).then((cidades) => {
       res.status(200).json(cidades);
   }).catch((err) => {

@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 });
 
 // Rota para listar todos os Estados === OK
-router.get('/listAll', async (req,res) => {
+router.get('/listall', async (req,res) => {
   await Estado.find({}).then((estados) => {
       res.status(200).json(estados);
   }).catch((err) => {
@@ -18,7 +18,7 @@ router.get('/listAll', async (req,res) => {
   });
 });
 
-router.get('/listNome/:nome', async (req,res) => {
+router.get('/listname/:nome', async (req,res) => {
   await Estado.find({Nome: req.params.nome}).then((estados) => {
       res.status(200).json(estados);
   }).catch((err) => {
