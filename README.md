@@ -84,3 +84,5 @@ Já em relação ao Thunder, ele é uma extensão do VS Code, então, para utili
 - A rota ***/delete/*** irá excluir o cadastro. Assim como a rota ***/update***, é necessário informar o id após o "/" para a API identificar qual cadastro deve excluir.
 
 Se você estiver utilizando o Thunder Client, no repositório tem disponível as Collections (que são espécies de atralhos para evitar estar escrevendo as rotas todas as vezes) de cada rota, para facilitar a utilização delas. Basta importar as Collections (que estão salvas com arquivos .JSON) e as rotas principais estão separadas por pastas, cada pasta contém as 5 rotas do CRUD.
+
+Caso utilize o POSTMAN ou Insomnia, o link do projeto para utilizar a API é https://m3-backend-projeto2.herokuapp.com/.
